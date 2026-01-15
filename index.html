@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEATHER APP By Areeb Jeelani</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="search">
+            <input type="text" placeholder="Search City..." />
+            <div><span class="material-symbols-outlined">
+                    search
+                </span>
+            </div>
+        </div>
+        <!-- section for the main page -->
+        <section id="main_section" class="hidden">
+            <div class="city">
+                <div>
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span>
+                    <h4>Rajpora</h4>
+                </div>
+                <div id="date">Sat, 1 Nov</div>
+            </div>
+            <div class="icon_temp">
+                <div class="icon">
+
+                </div>
+                <div class="temp">
+                    <h2>6 ℃</h2>
+                    <h3>Sunny</h3>
+                </div>
+            </div>
+            <div class="humid_wind">
+                <div class="condition_items">
+                    <span class="material-symbols-outlined">
+                        water_drop
+                    </span>
+                    <div class="humidity">
+                        <h5>Humidity %</h5>
+                        <h4>75</h4>
+                    </div>
+                </div>
+                <div class="condition_items">
+                    <span class="material-symbols-outlined">
+                        air
+                    </span>
+                    <div class="wind">
+                        <h5>Wind Speed k/h</h5>
+                        <h4>2 </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="next_day">
+                <div class="next" data-index="0">
+                    <h6>02 Nov</h6>
+                    <div class="next_icon1"></div>
+                    <h5>8 ℃</h5>
+                </div>
+                <div class="next" data-index="1">
+                    <h6>02 Nov</h6>
+                    <div class="next_icon1"></div>
+                    <h5>8 ℃</h5>
+                </div>
+                <div class="next" data-index="2">
+                    <h6>02 Nov</h6>
+                    <div class="next_icon1"></div>
+                    <h5>8 ℃</h5>
+                </div>
+                <div class="next" data-index="3">
+                    <h6>02 Nov</h6>
+                    <h5>No data available</h5>
+                </div>
+            </div>
+        </section>
+        <!-- Secton for the start page -->
+        <section id="start_section">
+            <div class="start_page">
+                <div></div>
+                <h2 style="margin: 10px;">Search City</h2>
+                <h4 style="text-align: center;">Search the weather conditions of a city.</h4>
+            </div>
+        </section>
+        <!-- section for the CITY NOT FOUND portion -->
+        <section id="not_found" class="hidden">
+            <div class="city_not_found">
+                <div></div>
+                <h2 style="margin: 10px;">Search City</h2>
+                <h4 style="text-align: center;">Search the weather conditions of a city.</h4>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
